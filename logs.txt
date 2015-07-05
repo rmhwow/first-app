@@ -1,0 +1,60 @@
+192:first-app BrigidOLeary$ heroku logs
+2015-07-05T21:18:09.309985+00:00 heroku[web.1]: Unidling
+2015-07-05T21:18:09.310427+00:00 heroku[web.1]: State changed from down to starting
+2015-07-05T21:18:13.191569+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 52841 -e production`
+2015-07-05T21:18:18.985109+00:00 app[web.1]: [2015-07-05 21:18:18] INFO  WEBrick 1.3.1
+2015-07-05T21:18:18.985143+00:00 app[web.1]: [2015-07-05 21:18:18] INFO  ruby 2.0.0 (2015-04-13) [x86_64-linux]
+2015-07-05T21:18:18.989515+00:00 app[web.1]: [2015-07-05 21:18:18] INFO  WEBrick::HTTPServer#start: pid=3 port=52841
+2015-07-05T21:18:19.378948+00:00 heroku[web.1]: State changed from starting to up
+2015-07-05T21:18:21.444666+00:00 app[web.1]: => Booting WEBrick
+2015-07-05T21:18:21.444673+00:00 app[web.1]: => Rails 4.2.2 application starting in production on http://0.0.0.0:52841
+2015-07-05T21:18:21.444675+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-07-05T21:18:21.444677+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-07-05T21:18:21.444679+00:00 app[web.1]: Started GET "/" for 96.231.219.109 at 2015-07-05 21:18:21 +0000
+2015-07-05T21:18:21.639903+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-07-05T21:18:21.670820+00:00 app[web.1]: Completed 200 OK in 31ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+2015-07-05T21:18:21.675251+00:00 heroku[router]: at=info method=GET path="/" host=powerful-island-6811.herokuapp.com request_id=47fee74a-b3e6-42ca-85ad-f8f4fc334085 fwd="96.231.219.109" dyno=web.1 connect=1ms service=262ms status=200 bytes=480
+2015-07-05T21:18:21.670435+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-07-05T21:18:21.846321+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=powerful-island-6811.herokuapp.com request_id=51b047ca-9205-4a74-a8e0-a18b2ee03c21 fwd="96.231.219.109" dyno=web.1 connect=2ms service=4ms status=200 bytes=228
+192:first-app BrigidOLeary$ heroku logs --tail
+2015-07-05T21:18:09.309985+00:00 heroku[web.1]: Unidling
+2015-07-05T21:18:09.310427+00:00 heroku[web.1]: State changed from down to starting
+2015-07-05T21:18:13.191569+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 52841 -e production`
+2015-07-05T21:18:18.985109+00:00 app[web.1]: [2015-07-05 21:18:18] INFO  WEBrick 1.3.1
+2015-07-05T21:18:18.985143+00:00 app[web.1]: [2015-07-05 21:18:18] INFO  ruby 2.0.0 (2015-04-13) [x86_64-linux]
+2015-07-05T21:18:18.989515+00:00 app[web.1]: [2015-07-05 21:18:18] INFO  WEBrick::HTTPServer#start: pid=3 port=52841
+2015-07-05T21:18:19.378948+00:00 heroku[web.1]: State changed from starting to up
+2015-07-05T21:18:21.444666+00:00 app[web.1]: => Booting WEBrick
+2015-07-05T21:18:21.444673+00:00 app[web.1]: => Rails 4.2.2 application starting in production on http://0.0.0.0:52841
+2015-07-05T21:18:21.444675+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-07-05T21:18:21.444677+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-07-05T21:18:21.444679+00:00 app[web.1]: Started GET "/" for 96.231.219.109 at 2015-07-05 21:18:21 +0000
+2015-07-05T21:18:21.639903+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-07-05T21:18:21.670820+00:00 app[web.1]: Completed 200 OK in 31ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+2015-07-05T21:18:21.675251+00:00 heroku[router]: at=info method=GET path="/" host=powerful-island-6811.herokuapp.com request_id=47fee74a-b3e6-42ca-85ad-f8f4fc334085 fwd="96.231.219.109" dyno=web.1 connect=1ms service=262ms status=200 bytes=480
+2015-07-05T21:18:21.670435+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-07-05T21:18:21.846321+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=powerful-island-6811.herokuapp.com request_id=51b047ca-9205-4a74-a8e0-a18b2ee03c21 fwd="96.231.219.109" dyno=web.1 connect=2ms service=4ms status=200 bytes=228
+2015-07-05T21:19:46.440186+00:00 heroku[router]: at=info method=GET path="/" host=powerful-island-6811.herokuapp.com request_id=cce93087-1779-4062-be76-4dc0de289be3 fwd="96.231.219.109" dyno=web.1 connect=4ms service=70ms status=200 bytes=480
+2015-07-05T21:19:46.391356+00:00 app[web.1]: Started GET "/" for 96.231.219.109 at 2015-07-05 21:19:46 +0000
+2015-07-05T21:19:46.421848+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-07-05T21:19:46.414522+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-07-05T21:19:46.437000+00:00 app[web.1]: Completed 200 OK in 22ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+^C
+ !    Command cancelled.
+192:first-app BrigidOLeary$ heroku logs -s
+Usage: heroku logs
+
+ display recent log output
+
+ -n, --num NUM        # the number of lines to display
+ -p, --ps PS          # only display logs from the given process
+ -s, --source SOURCE  # only display logs from the given source
+ -t, --tail           # continually stream logs
+ --force-colors       # Force use of ANSI color characters (even on non-tty outputs)
+
+Example:
+
+ $ heroku logs
+ 2012-01-01T12:00:00+00:00 heroku[api]: Config add EXAMPLE by email@example.com
+ 2012-01-01T12:00:01+00:00 heroku[api]: Release v1 created by email@example.com
+
